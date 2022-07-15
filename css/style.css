@@ -1,0 +1,92 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  
+  /* adjust typography defaults */
+  body {
+    height: 100%;
+    font-family: 'Kaushan Script', cursive;
+    background-image: url(../img/backgroundimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  html{
+    height:100%;
+  }
+
+  h1, h2, form{
+    text-align: center;
+  }
+  button{
+    display: block;
+    margin: 20px auto;
+    font-size: 3rem;
+    background-color: #f37a48;
+  }
+  /* ul{
+    width: 100px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+  }
+  li{
+    text-align: center;
+    width: 94px;
+    height: 49px;
+    border: 1px solid black;
+  } */
+  h2{
+    font-size: 100px;
+    color: black;
+    font-weight: bold;
+  }
+h1{
+    font-size: 4rem;
+    margin: auto;
+    margin-bottom: 2%;
+    height: 12%;
+    width: 60%;
+    color: white;
+    background: #90ee90;
+    border: 1px solid black;
+}  
+
+.dayoftheweek{
+    font-size: 2rem;
+}
+
+.dayoftheweekinput{
+    border: 3px solid red;
+    font-size: 2rem;
+    width: 22%;
+    padding-left: 3%;
+    border-radius: 11px;
+}
+
+#imagesection{
+    margin-top: 2%;
+    height: 33%;
+    border: 2px solid black;
+    width: 35%;
+    margin-left: 33%;
+    overflow:hidden;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
