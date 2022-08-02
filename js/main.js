@@ -4,7 +4,7 @@ document.querySelector('#check').addEventListener('click', check)
 
 function check() {
 
-  const day = document.querySelector('#day').value.
+  const day = document.querySelector('#day').value
 
   if(day === "tuesday" || day === "thursday"){
     console.log("YOU HAVE CLASS")
@@ -15,7 +15,8 @@ function check() {
     document.querySelector('#imagesection1').appendChild(image)
     document.querySelector('#imagesection2').classList.add('hidden')
     document.querySelector('#imagesection3').classList.add('hidden')
-  }else if( day === "saturday" || day === "sunday"){
+  }
+  else if( day === "saturday" || day === "sunday"){
     console.log("Its The Weekend")
     document.querySelector('#placeToSee').innerText="Its The Weekend".toUpperCase()
     document.querySelector('#imagesection2').classList.toggle('hidden')
@@ -25,7 +26,7 @@ function check() {
     document.querySelector('#imagesection1').classList.add('hidden')
     document.querySelector('#imagesection3').classList.add('hidden')
     
-  }else if( day === "monday" || day === "wednesday" || day === "friday"){
+  }else{
     console.log("BORING")
     document.querySelector('#placeToSee').innerText="BORING".toUpperCase()
     document.querySelector('#imagesection3').classList.toggle('hidden')
